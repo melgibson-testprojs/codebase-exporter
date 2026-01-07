@@ -25,31 +25,6 @@ However, sharing an entire project manually is:
 **LLM Codebase Dumper automates this in one command.**
 
 ---
-
-##  Features
-
--  Recursively scans the entire project folder
--  Prints the complete directory tree structure first
--  Extracts contents of `.py` and `.txt` files
--  Includes full file paths before every file’s content
--  Produces a **single LLM-friendly text file**
--  Safe file reading (handles encoding issues gracefully)
--  Zero dependencies — Python standard library only
-
----
-
-##  Ideal Use Cases
-
-- Giving **ChatGPT / GPT-4** full project context
-- Debugging complex applications with an LLM
-- Codebase reviews & refactoring suggestions
-- Security and architecture analysis
-- Generating documentation with AI
-- Preparing datasets for fine-tuned or local LLMs
-- Archiving project snapshots in human-readable form
-
----
-
 ##  Installation
 
 ### Option 1: Clone from GitHub (recommended)
@@ -105,3 +80,28 @@ FILE PATH: my_project/services/api.py
 def start_server():
     print("Server started")
 ```
+##  Features
+
+-  Recursively scans the entire project folder
+-  Prints the complete directory tree structure first
+-  Extracts contents of `.py` and `.txt` files
+-  Includes full file paths before every file’s content
+-  Produces a **single LLM-friendly text file**
+-  Safe file reading (handles encoding issues gracefully)
+-  Zero dependencies — Python standard library only
+
+---
+
+##  Ideal Use Cases
+
+- Giving **ChatGPT / GPT-4** full project context
+- Debugging complex applications with an LLM
+- Codebase reviews & refactoring suggestions
+- Security and architecture analysis
+- Generating documentation with AI
+- Preparing datasets for fine-tuned or local LLMs
+- Archiving project snapshots in human-readable form
+
+---
+
+
