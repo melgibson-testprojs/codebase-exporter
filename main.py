@@ -1,9 +1,6 @@
 import os
 
 def write_directory_structure(root_path, output_file):
-    """
-    Writes the directory tree structure to the output file.
-    """
     for root, dirs, files in os.walk(root_path):
         level = root.replace(root_path, "").count(os.sep)
         indent = "│   " * level
@@ -15,12 +12,9 @@ def write_directory_structure(root_path, output_file):
 
 
 def write_file_contents(root_path, output_file):
-    """
-    Writes contents of .py and .txt files recursively.
-    """
     for root, _, files in os.walk(root_path):
         for file in files:
-            if file.endswith((".py", ".txt")):
+            if file.endswith((".py", ".txt", ".html", ".js", ".css", ".cpp", ".java")):
                 file_path = os.path.join(root, file)
 
                 output_file.write("\n" + "=" * 80 + "\n")
